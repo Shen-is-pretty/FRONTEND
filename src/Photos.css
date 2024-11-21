@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+/* Main container for the carousel */
+.photos-container {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Cinzel', sans-serif; /* Use Satisfy font */
+}
+
+.photos-container h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #5524f6; /* Adjusted for a warm brown color */
+}
+
+/* Customize carousel images */
+.carousel-img {
+  max-height: 400px; /* Adjust the max-height to your desired slide size */
+  width: 100%;       /* Ensure the image stretches to fit the width */
+  object-fit: contain; /* Fit the entire image within the slide */
+  border-radius: 10px;
+  background-color: transparent; /* Transparent background for cleaner look */
+}
+
+/* Styling for carousel captions */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.3); /* Slightly transparent background for readability */
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.carousel-caption h3 {
+  font-size: 1.5em;
+  margin: 0;
+  font-family: 'Satisfy', sans-serif; /* Apply Satisfy to captions */
+  color: #85b5ef;
+}

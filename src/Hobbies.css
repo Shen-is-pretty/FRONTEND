@@ -1,0 +1,58 @@
+/* Container for the Hobbies page */
+.hobbies-container {
+  padding: 30px;
+  background-color: transparent;
+  text-align: center;
+}
+
+/* Styling for the title */
+.hobbies-container h1 {
+  font-size: 2.5rem;
+  color: #ffecd3;
+  margin-bottom: 40px;
+}
+
+/* Styling for the list of hobbies */
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Styling for each hobby item */
+.hobby-item {
+  background-color: x#fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(236, 168, 96, 0.603);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for hobby items */
+.hobby-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the hobby icon */
+.hobby-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the hobby title */
+.hobby-item h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Styling for the hobby description */
+.hobby-item p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}

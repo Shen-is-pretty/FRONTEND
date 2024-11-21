@@ -1,0 +1,67 @@
+/* Container for the Education page */
+.education-container {
+    padding: 30px;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  /* Styling for the title */
+  .education-container h1 {
+    font-size: 2.5rem;
+    color: #f9f4b7;
+    margin-bottom: 40px;
+  }
+  
+  /* Styling for the list of education items */
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  /* Styling for each education item */
+  .education-item {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(231, 180, 141, 0.562);
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for education items */
+  .education-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the degree title */
+  .education-item h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the institution name */
+  .education-item .institution {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for the year of study */
+  .education-item .year {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for the description */
+  .education-item .description {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  

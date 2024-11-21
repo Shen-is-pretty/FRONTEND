@@ -1,0 +1,59 @@
+/* Container for the Aspiration page */
+.aspiration-container {
+    padding: 30px;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  /* Styling for the title */
+  .aspiration-container h1 {
+    font-size: 2.5rem;
+    color: #f6ae51;
+    margin-bottom: 40px;
+  }
+  
+  /* Styling for the list of aspirations */
+  .aspiration-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Styling for each aspiration item */
+  .aspiration-item {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(251, 196, 119, 0.811);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for aspiration items */
+  .aspiration-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the aspiration icon */
+  .aspiration-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the aspiration title */
+  .aspiration-item h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the aspiration description */
+  .aspiration-item p {
+    font-size: 1rem;
+    color: #fff8f8;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,68 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/* Custom Navbar Styling */
+.custom-navbar {
+  background-color: transparent; /* Set background to transparent */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  
+}
+
+.custom-navbar .navbar-brand {
+  font-size: 1.8rem; /* Make brand name larger */
+  color: #fff !important;
+  font-weight: bold;
+  font-family: 'Dancing Script', sans-serif; /* Apply the Dancing Script font */
+}
+
+.custom-navbar .nav-link-hover {
+  color: #fff !important; /* White text for links */
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-navbar .nav-link-hover:hover {
+  background-color: #a5caf3; /* Change color on hover */
+  color: #fff !important; /* Ensure text stays white */
+}
+
+/* Style for main content area */
+.main-content {
+  padding-top: 80px; /* Add space for fixed navbar */
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  font-family: 'Cinzel', serif; /* Apply the Cinzel font */
+}
+
+/* Styling for the background and content areas */
+body {
+  font-family: 'Cinzel', serif; /* Apply the Cinzel font */
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.navbar {
+  z-index: 999; /* Ensure navbar stays above content */
+}
+
+/* General hover effect for navbar items */
+.navbar-nav .nav-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+}
+
+/* For any fixed top content with overlapping background */
+#main-content {
+  padding-top: 80px;
+}
