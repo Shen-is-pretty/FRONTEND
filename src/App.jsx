@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation, NavLink } fr
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './app.css';
+import './App.css';
 import Home from './Home';
 import About from './About';
 import Photos from './Photos';
