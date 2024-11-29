@@ -15,7 +15,25 @@ const educationData = [
     institution: "Ocampo National High School",
     year: "2021-2023",
     description: "STEM Strand",
+    description: "Graduated as WITH HIGH HONORS.",
+    description: "Former SSG Secretary.",
   },
+    {
+    id: 3,
+    degree: "Junior High School",
+    institution: "Ocampo National High School",
+    year: "2017-2021",
+    description: "Special Science Class",
+      description: "Consistent Honor Student.",
+  }, 
+    {
+    id: 2,
+    degree: "Elementary",
+    institution: "Guinaban Elementary School",
+    year: "2011-2017",
+    description: "Award Received:",
+      description: "1st Honorable Mention",
+  },  
 ];
 
 const EducationPage = () => {
