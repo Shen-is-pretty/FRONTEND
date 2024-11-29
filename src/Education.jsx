@@ -15,8 +15,7 @@ const educationData = [
     institution: "Ocampo National High School",
     year: "2021-2023",
     description: "STEM Strand",
-    description: "Graduated as WITH HIGH HONORS.",
-    description: "Former SSG Secretary.",
+    description: "With High Honors and a Former SSG Secretary.",
   },
     {
     id: 3,
@@ -31,7 +30,6 @@ const educationData = [
     degree: "Elementary",
     institution: "Guinaban Elementary School",
     year: "2011-2017",
-    description: "Award Received:",
       description: "1st Honorable Mention",
   },  
 ];
