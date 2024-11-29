@@ -15,7 +15,7 @@ const educationData = [
     institution: "Ocampo National High School",
     year: "2021-2023",
     description: "STEM Strand",
-    description: "With High Honors and a Former SSG Secretary.",
+    description: "With High Honors and a former SSG Secretary.",
   },
     {
     id: 3,
