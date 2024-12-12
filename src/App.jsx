@@ -58,29 +58,29 @@ const BackgroundWrapper = ({ children }) => {
 
 function App() {
   return (
-    <Router>
+    <Router future={{ v7_relativeSplatPath: true,  v7_startTransition: true }}>
       <BackgroundWrapper>
         {/* Navigation Bar */}
         <Navbar bg="violet" variant="violet" fixed="top" expand="lg" className="custom-navbar">
-          <Container>
-            <Navbar.Brand as={Link} to="/" style={{ fontWeight: "bold" }}>
-            Curated Curiosities
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                {/* Use NavLink for active route styling */}
-                <NavLink to="/home" className="nav-link-hover" activeClassName="active">Home</NavLink>
-                <NavLink to="/about" className="nav-link-hover" activeClassName="active">About</NavLink>
-                <NavLink to="/education" className="nav-link-hover" activeClassName="active">Education</NavLink>
-                <NavLink to="/hobbies" className="nav-link-hover" activeClassName="active">Hobbies</NavLink>
-                <NavLink to="/aspiration" className="nav-link-hover" activeClassName="active">Aspiration</NavLink>
-                <NavLink to="/contact" className="nav-link-hover" activeClassName="active">Contact</NavLink>
-                <NavLink to="/photos" className="nav-link-hover" activeClassName="active">Photos</NavLink>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+  <Container>
+    <Navbar.Brand as={Link} to="/" style={{ fontWeight: "bold" }}>
+      Curated Curiosities
+    </Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <NavLink to="/home" className={({ isActive }) => isActive ? "nav-link-hover active" : "nav-link-hover"}>Home</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link-hover active" : "nav-link-hover"}>About</NavLink>
+        <NavLink to="/education" className={({ isActive }) => isActive ? "nav-link-hover active" : "nav-link-hover"}>Education</NavLink>
+        <NavLink to="/hobbies" className={({ isActive }) => isActive ? "nav-link-hover active" : "nav-link-hover"}>Hobbies</NavLink>
+        <NavLink to="/aspiration" className={({ isActive }) => isActive ? "nav-link-hover active" : "nav-link-hover"}>Aspiration</NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link-hover active" : "nav-link-hover"}>Contact</NavLink>
+        <NavLink to="/photos" className={({ isActive }) => isActive ? "nav-link-hover active" : "nav-link-hover"}>Photos</NavLink>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+
 
         {/* Route Configuration */}
         <Routes>

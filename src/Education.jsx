@@ -1,5 +1,7 @@
 import React from "react";
 import "./Education.css";
+import { Container, Row } from "react-bootstrap";
+
 
 const educationData = [
   {
@@ -14,19 +16,17 @@ const educationData = [
     degree: "Senior High School",
     institution: "Ocampo National High School",
     year: "2021-2023",
-    description: "STEM Strand",
-    description: "With High Honors and a former SSG Secretary.",
+    description: "STEM Strand With High Honors and a former SSG Secretary."
   },
     {
     id: 3,
     degree: "Junior High School",
     institution: "Ocampo National High School",
     year: "2017-2021",
-    description: "Special Science Class",
-      description: "Consistent Honor Student.",
+    description: "Special Science Class Consistent Honor Student.",
   }, 
     {
-    id: 2,
+    id: 4,
     degree: "Elementary",
     institution: "Guinaban Elementary School",
     year: "2011-2017",
@@ -39,14 +39,18 @@ const EducationPage = () => {
     <div className="education-container">
       <h1>EDUCATION: </h1>
       <div className="education-list">
+        <Container>
+          <Row>
         {educationData.map((edu) => (
           <div key={edu.id} className="education-item">
             <h2>{edu.degree}</h2>
             <p className="institution">{edu.institution}</p>
             <p className="year">{edu.year}</p>
             <p className="description">{edu.description}</p>
-          </div>
+            </div>
         ))}
+        </Row>
+        </Container>
       </div>
     </div>
   );

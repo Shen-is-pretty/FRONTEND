@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hobbies.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 const hobbiesData = [
   {
@@ -27,13 +28,17 @@ const HobbiesPage = () => {
     <div className="hobbies-container">
       <h1>My Hobbies</h1>
       <div className="hobbies-list">
+      <Container>
+      <Row>
         {hobbiesData.map((hobby) => (
-          <div key={hobby.id} className="hobby-item">
+              <Col lg={4} md={6} sm={12} key={hobby.id} className="hobby-item">
             <div className="hobby-icon">{hobby.icon}</div>
             <h2>{hobby.hobby}</h2>
             <p>{hobby.description}</p>
-          </div>
+            </Col>
         ))}
+        </Row>
+        </Container>
       </div>
     </div>
   );

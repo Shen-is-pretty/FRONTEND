@@ -1,5 +1,6 @@
 import React from "react";
 import "./Aspiration.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 const aspirationsData = [
   {
@@ -37,13 +38,17 @@ const AspirationPage = () => {
     <div className="aspiration-container">
       <h1>My Aspirations</h1>
       <div className="aspiration-list">
-        {aspirationsData.map((aspiration) => (
-          <div key={aspiration.id} className="aspiration-item">
-            <div className="aspiration-icon">{aspiration.icon}</div>
-            <h2>{aspiration.title}</h2>
-            <p>{aspiration.description}</p>
-          </div>
-        ))}
+        <Container>
+          <Row>
+            {aspirationsData.map((aspiration) => (
+              <Col key={aspiration.id} lg={3} md={6} sm={12} className="aspiration-item">
+                <div className="aspiration-icon">{aspiration.icon}</div>
+                <h2>{aspiration.title}</h2>
+                <p>{aspiration.description}</p>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
     </div>
   );
